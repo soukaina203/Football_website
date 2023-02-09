@@ -52,11 +52,12 @@ function Header() {
 
 <div className="hidden md:hidden  lg:flex relative top-[-5rem] justify-center w-[100%] h-28
          items-center font-semibold lg:ml-[9rem] lg:text-[17px]"> 
-          <ul className="flex flex-row gap-16  mt-[-3rem] lg:mr-[18rem]">
+          <ul className="flex flex-row gap-[7rem]  mt-[-3rem] lg:mr-[18rem] ">
 
-          <Link to="/">Home</Link>
-          <Link to="/about">ABOUT</Link>
-          <Link to="/contact">CONTACT</Link>
+     <li><Link to="/">HOME</Link> </li>     
+     <li><Link to="/about">ABOUT</Link> </li>     
+     <li><Link to="/contact">CONTACT</Link> </li>     
+
 
           
           </ul>

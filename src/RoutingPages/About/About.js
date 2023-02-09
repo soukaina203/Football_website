@@ -10,7 +10,7 @@ function About() {
 
     <div className=' grid   grid-cols-1 lg:grid-cols-2  
  flex-wrap relative  w-[92%]
- h-[100vh] md:place-items-center md:mt-[-20rem]
+ lg:h-[50vh] h-[100vh] md:place-items-center md:mt-[-20rem] 
     '>
         <img src="14.png" alt="" className='hidden lg:flex' />
         <div  className=' w-[83%] h-[19rem] flex flex-col mt-1 ml-[8%]
