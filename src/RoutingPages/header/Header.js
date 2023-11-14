@@ -5,68 +5,54 @@ import { MdOutlineClose } from "react-icons/md";
 import {Link } from 'react-router-dom'
 function Header() {
   
-  const [isClicked, setClicked] = useState({ menu: true, exit: false });
-  let handleClick = () => {
-    if (isClicked.menu) {
-      setClicked({ menu: false, exit: true });
-    } else {
-      setClicked({ menu: true, exit: false });
-    }
-  };
+ 
   return (
-    <div
-      className="h-20 z-50 bg-header-hero
-        lg:w-[100%]  lg:h-16  text-white  
-        "
-    >
-      <div>
-      <img src="0.png" alt="" className='w-[114px]  h-[100px] z-40' />
-     
-      
-        <button
-          className="text-2xl absolute right-5 top-6 z-40"
-          onClick={() => {
-            handleClick();
-          }}
-        >
-          {isClicked.menu ? (
-            <GiHamburgerMenu className="lg:hidden" />
-          ) : (
-            <MdOutlineClose className="lg:hidden " />
-          )}
+    <nav className="fixed top-0 left-0 z-50 w-full shadow ">
+      <div className="container flex items-center justify-between m-auto text-white bg-header-hero">
+
+        <img src="0.png" alt="" className="flex gap-2  w-[90px]  h-[90px]  z-40 text-xl font-bold cursor-pointer md:ml-0 flew-r"/>
+        <ul className="items-center hidden pr-10 text-base font-normal cursor-pointer lg:flex">
+          <li className="px-6 py-4 duration-500 hover:text-header-red hover:pointer-auto" > <Link to="/" smooth={true} offset={200}>  Home </Link> </li>
+          <li className="px-6 py-4 duration-500 hover:text-header-red" > <Link to="/about" smooth={true} offset={200} duration={500}>  About </Link> </li>
+          <li className="px-6 py-4 duration-500 hover:text-header-red" > <Link to="/contact" >  Contact </Link> </li>
+        </ul>
+        <button className="hidden px-6 py-4 pr-10 text-base font-normal duration-500 cursor-pointer lg:block hover:text-header-red">
+          Welcome
         </button>
-        {isClicked.menu ? (
-          " "
-        ) : (
-          <div className="lg:hidden flex flex-col justify-center w-[100%]
-           h-[100vh]  duration-150 md:w-[45%] bg-header-hero z-30 absolute right-0 bg-black top-0  ">
-        
-            <ul className="flex flex-col lg:gap-16 ml-6 gap-8 bg-header-hero w-[90%]  h-[25rem] mt-[0rem] font-semibold   ">
-            <Link to="/" className='hover:text-bg-darkRed duration-500'>HOME </Link>
-          <Link to="/about" className='hover:text-bg-darkRed duration-500'>ABOUT</Link>
-          <Link to="/contact" className='hover:text-bg-darkRed  duration-500'>CONTACT</Link>
+
+        {/* phone & tablet */}
+        <button className=" lg:hidden group">
+          <GiHamburgerMenu className="mr-5 text-2xl" />
+
+
+
+          <div className="absolute top-0 w-8/12 h-screen ml-auto mr-auto text-white transition-all duration-500 opacity-0 bg-home-cl1 bg-header-hero md:w-5/12 right-full group-focus:right-0 group-focus:opacity-100">
+            <ul className="flex flex-col items-center justify-center pr-10 mt-12 text-base font-semibold cursor-pointer ">
+              <li className="w-full px-6 py-4 duration-500 ">
+                <Link to="/" smooth={true} offset={200} duration={500}>
+                  Home
+                </Link>
+              </li>
+              <li className="w-full px-6 py-4 ml-auto mr-auto duration-500">
+                <Link to="/about" smooth={true} offset={200} duration={500}>
+                  About
+                </Link>
+              </li>
+              <li className="w-full px-6 py-4 duration-500">
+                <Link to="/contact" smooth={true} offset={200} duration={500}>
+                  Contact
+                </Link>
+              </li>
+             
             </ul>
-
           </div>
-        )}
+         
 
-<div className="hidden md:hidden  lg:flex relative top-[-5rem] justify-center w-[100%] h-28
-         items-center font-semibold lg:ml-[9rem] lg:text-[17px]"> 
-          <ul className="flex flex-row gap-[7rem]  mt-[-3rem] lg:mr-[18rem] ">
-
-     <li><Link to="/">HOME</Link> </li>     
-     <li><Link to="/about">ABOUT</Link> </li>     
-     <li><Link to="/contact">CONTACT</Link> </li>     
-
-
-          
-          </ul>
-        
-     
-        </div>
+        </button>
 
       </div>
-    </div>
+    </nav>
+
   );
 }
 

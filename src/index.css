@@ -12,7 +12,11 @@ body{
         #282a3a,
         #735f32
       );
+      background-color: #8a7676;
     height: fit-content;
     color: white;
     overflow-x: hidden;
+    display:  flex;
+    flex-direction: column;
+    gap: 5px;
 }

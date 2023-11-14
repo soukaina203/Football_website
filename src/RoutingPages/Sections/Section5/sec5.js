@@ -4,7 +4,7 @@ function sec5() {
   return (
     <div className=' 
     w-[100%]
-    flex gap-[7rem] flex-col
+    flex gap-[1.5rem] flex-col
  lg:h-[70rem]
 main:h-[60rem]
     '>
@@ -15,10 +15,9 @@ main:h-[60rem]
 
       <div className='lg:w-[100%] 
       grid place-items-center lg:h-[21rem]  
-      lg:mt-[-5rem] 
-      md:mt-[-5rem]
+     
     '>
-        <div className=" grid grid-rows-1 lg:grid-cols-3 main:grid-cols-3   place-items-center
+        <div className=" grid grid-rows-1 lg:grid-cols-3 main:grid-cols-3  bg-slate-600 place-items-center
        lg:w-[75%] gap-y-[1rem] gap-x-[0.5rem] md:grid-cols-2
 
        ">

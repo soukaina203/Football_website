@@ -4,24 +4,35 @@ function Section3() {
   return (
     <div className='
     h-[48rem]
-    lg:h-[30rem] relative  
+    md:h-[24rem]
+    lg:h-[30rem] 
     main:h-[26rem]
-    md:h-[30rem]
     '>
       <Paragraphe title={"Who is the coach of the moroccan national team ?"} />
-      <div className='lg:w-[100%] grid place-items-center h-[21rem]  relative lg:top-[-2rem]'>
+      <div className='lg:w-[100%]  flex justify-center h-[21rem]  '>
 
-        <div className=' grid grid-rows-1 lg:grid-cols-2 main:grid-cols-2  place-items-center
+        <div className=' grid grid-rows-1 md:grid-cols-2 lg:grid-cols-2
+         main:grid-cols-2  place-items-center
       main:w-[73%]
-      lg:w-[70%]
+      lg:w-[70%] 
+      lg:gap-6
       '>
-          <img src="15.png" alt="" className='m-[1em]
-       md:relative 
-        w-[15rem] h-[15rem] 
-       lg:mt-[3.9rem] main:h-[22rem] main:w-[21rem]  lg:w-[15rem] lg:h-[23rem]' />
-          <div className='lg:w-[30rem] lg:mt-[3rem]  main:relative main:right-9 main:w-[30rem] '>
-            <Paragraphe Text={"WALID REGRAGUI born 23 September 1975) is a Moroccan football manager and a retired professional footballer who played as a defender. He is the head coach of the Morocco national football team.Born in France. Clubs he played for include Toulouse, AC Ajaccio, Grenoble and Racing Santander."} />
-            <Paragraphe Text={"He has been widely praised for his leadership of the Morocco team following their 2022 FIFA World Cup quarterfinal win against Portugal, in which Morocco became the first African team to reach a World Cup semi-final."} />
+          <img src="15.png" alt="" className='
+        w-[15rem] h-[15rem]  md:h-[18rem]
+   lg:w-[16rem] lg:h-[19rem]' />
+
+          <div className='  lg:h-[20rem]  lg:mt-[1.8rem] main:w-[30rem] '>
+<p className='lg:text-[22px] font-normal text-base  lg:w-[28rem] '>
+WALID REGRAGUI born 23 September 1975 is a Moroccan football 
+manager and a retired professional footballer who played as a defender.
+ He is the head coach of the Morocco national football team.Born in France. Clubs he played for include Toulouse, AC Ajaccio, Grenoble and Racing Santander.He has been widely praised for his 
+</p>
+<p className='lg:text-[22px] font-normal text-base mt-3  lg:w-[28rem] lg:mt-2 hidden lg:block '>
+WALID REGRAGUI born 23 September 1975 is a Moroccan football 
+manager and a retired professional footballer who played as a defender.
+ He is the head coach of the Morocco national.
+ Lorem ipsum dolor sit amet consectetur 
+</p>
           </div>
         </div>
       </div>
@@ -30,4 +41,3 @@ function Section3() {
 }
 
 export default Section3
-// top-[-9rem] mt-16 md:mt-[-11rem] lg:top-[23rem] 
